@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>ASHMA</title>
+</head>
+<body>
+ 
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkBtn">
+        <i class='fa fa-bars'></i>
+        
+    </label>
+
+
+
+    <!-- initial -->
+    <label class="logo">GRMLN</label>
+    <ul>
+    <li><a class="active" href="./index.html">Home</a></li>
+    <li><a class="active" href="./aboutMe.html">About Me</a></li>
+    <li><a class="active" href="./maps.html">Maps</a></li></ul>
+</nav>
+
+
+<div class="details">
+    <h1>I AM <span>ASHMA RAI.</span></h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, itaque! <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Odit vel corrupti mollitia obcaecati dicta error.</p>
+<a href="./images/RESUME.pdf" download>DOWNLOAD CV</a>
+
+</div>
+
+<div class="images">
+    <img src="" alt="" class="shape">
+    <img src="./images/profile.png" alt="" class="profile">
+</div>
+
+<br>
+<br><br><br><br><br><br>
+<br><br><br>
+<br>
+<br>
+
+<div class="container">
+<div class="categories">
+    QUERIES
+</div>
+<div class="details">
+    <h1>GOT ME ANY QUESTIONS<span>?</span></h1>
+
+
+
+<div class="queryForm">
+    <form action="#" name="myForm">
+        <div class="form first">
+            <div class="formDetails personal">
+                <div class="fields">
+                    <div class="inputField">
+                        <label for="userName">USERNAME</label>
+        <input type="text" class="userName" id="userName" required>
+        </div>
+        
+        <div class="inputField">
+        <label for="queryTitle">QUERY</label>
+        <input type="textarea" class="queryTitle" id="queryTitle" required>
+        </div>
+
+        <div class="inputField">
+        <label for="queryDesc">DESCRIPTION</label>
+        <input type="textarea" class="queryDesc" id="queryDesc">
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        
+
+
+        <div class="submitField">
+        <a href="">SUBMIT</a>
+            </div>
+    </form>
+</div>
+</div>
+
+
+
+<br><br><br>
+<!-- footer part here -->
+<footer class="footer">
+    <div class="footerContainer">
+        <div class="row">
+            <div class="footerCol">
+                <h4>NAVIGATION</h4>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutMe.html">ABOUT ME</a></li>
+                    <li><a href="maps.html">MAPS</a></li>
+                </ul>
+            </div>
+            <div class="footerCol">
+                <h4>CONTACT ME</h4>
+                <ul>
+                    <li><a href="#">EMAIL1</a></li>
+                    <li><a href="#">EMAIL2</a></li>
+                </ul>
+            </div>
+            <div class="footerCol">
+                <h4>FOLLOW ME</h4>
+                <div class="socialLinks">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script>
+
+    let userNameRegEx ="^[^0-9][a-zA-Z0-9_]+$"
+    function newQuery(){
+        if (document.myForm.userName==""){
+            alert("Please enter your username.");
+            document.myForm.userName.focus();
+            return false;
+        }
+        if (document.myForm.queryTitle==""){
+            alert("Please enter your query.");
+            document.myForm.queryTitle.focus();
+            return false;
+        }
+        let userName=document.getElementById("userName").value;
+        if(!userName.test(userNameRegEx)){
+            alert("Username Invalid");
+            document.myForm.userName.focus();
+            return false;
+        }
+    }
+</script>
+
+</body>
+</html>

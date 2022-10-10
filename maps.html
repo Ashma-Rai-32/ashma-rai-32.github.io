@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+    integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s="
+    crossorigin=""></script>
+   
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Maps</title>
+</head>
+<body>
+    
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkBtn">
+            <i class='fa fa-bars'></i>
+            
+        </label>
+    
+    
+    
+        <!-- initial -->
+        <label class="logo">GRMLN</label>
+        <ul>
+        <li><a class="active" href="./index.html">Home</a></li>
+        <li><a class="active" href="./aboutMe.html">About Me</a></li>
+        <li><a class="active" href="./maps.html">Maps</a></li></ul>
+    </nav>
+
+
+<br>
+<div class="status">
+<div class="locationButtons">
+    <button class="btn homeLocation">Home</button>
+    <button class="btn currentLocation">current</button>
+    
+    <button class="btn collegeLocation">college</button>
+</div>
+
+<div class="mapContainer"><div id="map"></div>
+</div>
+
+</div>
+</div>
+
+
+
+<script src="./js/maps.js"></script>
+    
+</body>
+</html>
